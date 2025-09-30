@@ -11,7 +11,7 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v3
 
-    - name: ⚡ Setup Node.js
+    - name: Setup Node.js
       uses: actions/setup-node@v3
       with:
         node-version: '18'
@@ -32,5 +32,5 @@ jobs:
         password: ${{ secrets.SSH_PASSWORD }}
         port: ${{ secrets.SSH_PORT }}
         source: "dist/*"
-        target: "/home/${{ secrets.SSH_USER }}/domains/lightseagreen-dragonfly-373505.hostingersite.com/public_html/"
+        target: "/home/${{ secrets.SSH_USER }}/domains/mintcream-anteater-452365.hostingersite.com/public_html/"
         strip_components: 1
